@@ -40,7 +40,8 @@
   <PropertyGroup>
     <GeneratedNugetDir>.\nuget\</GeneratedNugetDir>
     <NuspecFile>$(GeneratedNugetDir)Windows.Devices.Midi2.nuspec</NuspecFile>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <NuspecProperties>configuration=$(Configuration)</NuspecProperties>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageOutputPath>$(SolutionDir)vsfiles-sdk\PublishedNuGet\</PackageOutputPath>
     
     <EnableComInterop>true</EnableComInterop>

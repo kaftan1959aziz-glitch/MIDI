@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
 
   <!-- Build with the 64-bit hosted compiler and linker. A cross-compile defaults to the 32-bit
@@ -20,4 +20,5 @@
     <VcpkgAdditionalInstallOptions>$(VcpkgAdditionalInstallOptions) --overlay-ports="$(MSBuildThisFileDirectory)Libs\LibMidi2\overlay-ports"</VcpkgAdditionalInstallOptions>
   </PropertyGroup>
 
+  <Import Project="$(MSBuildThisFileDirectory)..\..\vcpkg\scripts\buildsystems\msbuild\vcpkg.props" />
 </Project>
